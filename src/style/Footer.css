@@ -5,12 +5,12 @@ footer{
     height: 209px;
     left: 0;
     background-color: black;
-    color: white;
     text-align: center;
 }
 .img_footer{
     padding-top: 66px;
 }
 .txt_footer{
-   margin-top: 29px;
+    margin-top: 29px;
+    color: #FFFFFF;
 }

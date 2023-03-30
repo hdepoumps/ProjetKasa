@@ -1,4 +1,3 @@
-
 import '../../style/Footer.css'
 import logo_footer from '../../img/Logo_footer.svg'
 function Footer() {

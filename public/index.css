@@ -6,3 +6,6 @@ body {
 p{
     font-size: 24px;
 }
+p,h1,h2{
+    color: #FF6060;
+}
