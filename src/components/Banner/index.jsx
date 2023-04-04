@@ -4,7 +4,8 @@ function Banner(props) {
   return (
     <div className={classes} >
       <img src={props.image} alt={props.alt} />
+      <p>{props.texte}</p>
     </div>
-  )
+  );
 }
 export default Banner;
