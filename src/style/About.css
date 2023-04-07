@@ -3,32 +3,6 @@
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 46px;
 }
 
-.card_about{
-    max-width: 1023px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 31px;
-    background-color: #F7F7F7;
-    border-radius: 5px;
-}
-.card_about_titre{
-    border-radius: 5px;
-    background-color: #FF6060;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 47px;
-    padding-left: 18px;
-    padding-right: 18px;
-}
-.card_about_detail{
-    padding-right: 18px;
-    padding-left: 18px;
-    padding-bottom: 0;
-}
-.card_about_detail p {
-    margin-bottom: 0;
-}

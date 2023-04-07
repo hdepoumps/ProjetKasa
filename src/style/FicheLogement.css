@@ -1,0 +1,64 @@
+.ficheLogement{
+    color: #FF6060;
+    text-align: left;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ficheLogement .enTete{
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    font-size: 18px;
+}
+.ficheLogement h1{
+    font-size: 36px;
+    height: 51px;
+    margin: 0;
+}
+.ficheLogement .location{
+    font-size: 18px;
+    height: 26px;
+    margin: 0;
+}
+.tags{
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+}
+.tag{
+
+    min-width: 115px;
+    height: 25px;
+    width: 115px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.tag p{
+    color: white;
+    font-size: 14px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.profile .name{
+    margin-right: 10px;
+    height: 52px;
+    text-align: end;
+}
+.profile .name p{
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.profile img{
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}

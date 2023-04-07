@@ -2,23 +2,28 @@
 function Survey() {
   const { questionNumber } = useParams()*/
 import Banner from '../../components/Banner/index'
-import '../../style/About.css'
-import img_about from '../../img/banner_about.png'
-import fleche from '../../img/fleche.svg'
+import Collapse from "../../components/Collapse";
+import '../../style/About.css';
+import img_about from '../../img/banner_about.png';
+import collapsedata from "../../data/collapseAbout.json";
 function About(){
+  const collapsabout = collapsedata.map((item) => {
+    return (
+      <Collapse
+        id={item.id}
+        title={item.title}
+        description={item.description}
+      />
+    );
+  });
   return (
     <div id={"about"}>
-      <Banner className={"card_banner_about"} image={img_about} alt={"fond représentant une montagne"} />
+      <Banner
+        className={"card_banner_about"}
+        image={img_about}
+        alt={"fond représentant une montagne"} />
       <section>
-        <div className={"card_about"}>
-          <div className={"card_about_titre"}>
-            <p>Fiabilité</p>
-            <img src={fleche} alt={"flèche"}/>
-          </div>
-          <div className={"card_about_detail"}>
-            <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</p>
-          </div>
-        </div>
+        {collapsabout}
       </section>
     </div>
   )
