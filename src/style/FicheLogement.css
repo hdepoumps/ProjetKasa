@@ -4,22 +4,72 @@
     max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .ficheLogement .enTete{
     display: flex;
     justify-content: space-between;
 }
+
+.carrousel {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.carrousel img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrousel .fleche {
+    position: absolute;;
+    width: 79px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carrousel .flechegauche {
+    left: 10px;
+    rotate: -90deg;
+}
+
+.carrousel .flechedroite {
+    right: 10px;
+    rotate: 90deg;
+}
+
+.carrousel .counter {
+    position: absolute;
+    bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+
 p{
     font-size: 18px;
 }
 .ficheLogement h1{
     font-size: 36px;
-    height: 51px;
+    min-height: 51px;
     margin: 0;
 }
 .ficheLogement .location{
     font-size: 18px;
-    height: 26px;
+    min-height: 26px;
     margin: 0;
 }
 .tags{
@@ -28,10 +78,10 @@ p{
     margin-top: 20px;
 }
 .tag{
-
-    min-width: 115px;
+    min-width: 95px;
     height: 25px;
-    width: 115px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 10px;
     background-color: #FF6060;
     display: flex;
@@ -61,4 +111,37 @@ p{
     width: 64px;
     height: 64px;
     border-radius: 32px;
+}
+.stars{
+    display: flex;
+    margin-top: 27px;
+}
+.stars img{
+    margin-left: 15px;
+}
+
+.descriEquip {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descriEquip .card_collapse {
+    width: 582px;
+    margin-right: 20px;
+}
+
+.descriEquip .card_collapse:last-child {
+    margin-right: 0;
+}
+
+.descriEquip .collapse_title {
+    border-radius: 10px;
+}
+
+.descriEquip .collapse_description {
+    border-radius: 10px;
+    margin-top: -10px;
+    padding-top: 40px;
+    padding-bottom: 27px;
+    min-height: calc(100% - 47px - 40px - 27px + 10px);
 }

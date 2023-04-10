@@ -1,6 +1,9 @@
 .error{
-     text-align: center;
+    text-align: center;
     padding-bottom: 159px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #FF6060;
 }
 
 .error h1{
