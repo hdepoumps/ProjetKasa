@@ -3,18 +3,33 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
-    margin-right: auto ;
+    margin-right: auto;
     max-width: 1240px;
     margin-top: 40px;
-    padding: 0 10px;
+    padding: 0 20px;
+    font-size: 26px;
 }
 a,a:visited{
     text-decoration: none;
     color: #FF6060;
-    font-size: 26px;
+
 }
 
 
 .accueil{
     padding-right: 57px;
+}
+
+@media screen and (max-width: 767px){
+    header{
+        font-size: 12px;
+        text-transform: uppercase;
+
+    }
+    header img{
+        width: 145px;
+    }
+    .accueil{
+        padding-right: 10px;
+    }
 }

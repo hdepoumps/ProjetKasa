@@ -11,3 +11,10 @@ p{
 p,h1,h2{
     color: #FF6060;
 }
+
+
+@media screen and (max-width: 767px){
+    p{
+        font-size: 12px;
+    }
+}

@@ -9,9 +9,8 @@
     padding-right: 10px;
     padding-left: 10px;
 }
-.ficheLogement .enTete{
-    display: flex;
-    justify-content: space-between;
+p{
+    font-size: 18px;
 }
 
 .carrousel {
@@ -59,8 +58,10 @@
     color: white;
 }
 
-p{
-    font-size: 18px;
+
+.ficheLogement .enTete{
+    display: flex;
+    justify-content: space-between;
 }
 .ficheLogement h1{
     font-size: 36px;
@@ -74,7 +75,7 @@ p{
 }
 .tags{
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     margin-top: 20px;
 }
 .tag{
@@ -96,7 +97,7 @@ p{
 .profile{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .profile .name{
     margin-right: 10px;
@@ -110,7 +111,7 @@ p{
 .profile img{
     width: 64px;
     height: 64px;
-    border-radius: 32px;
+    border-radius: 50%;
 }
 .stars{
     display: flex;
@@ -144,4 +145,87 @@ p{
     padding-top: 40px;
     padding-bottom: 27px;
     min-height: calc(100% - 47px - 40px - 27px + 10px);
+}
+
+@media screen and (max-width: 767px){
+    p{
+        font-size: 12px;
+    }
+    .carrousel{
+        height: 255px;
+    }
+    .carrousel img{
+        border-radius: 10px;
+    }
+    .carrousel .fleche{
+        width: 20px;
+        height: 12px;
+    }
+    .carrousel .counter{
+        display: none;
+    }
+    .ficheLogement .enTete{
+        display: initial;
+
+    }
+    .ficheLogement h1{
+        font-size: 18px;
+        min-height: initial;
+    }
+    .ficheLogement .location{
+        font-size: 14px;
+        min-height: initial;
+        margin-top: 5px;
+    }
+    .tags{
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+    .tag{
+        margin-top: 10px;
+    }
+    .tag p{
+        font-size: 12px;
+    }
+    .profileStars{
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .profile .name{
+        height: initial;
+    }
+    .profile .name p{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .profile img{
+        width: 32px;
+        height: 32px;
+    }
+    .stars{
+        margin-top: 0;
+    }
+    .stars img{
+        width: 13px;
+        margin-left: 0;
+        margin-right: 7px;
+    }
+    .descriEquip{
+        display: initial;
+        width: 100%;
+    }
+    .descriEquip .card_collapse {
+        width: 100%;
+        margin-right: 0;
+    }
+    .descriEquip .collapse_description {
+        border-radius: 5px;
+        margin-top: -5px;
+        padding-top: 23px;
+        padding-bottom: 10px;
+        min-height: initial;
+    }
 }

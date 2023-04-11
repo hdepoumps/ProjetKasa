@@ -43,7 +43,7 @@ function FicheLogement() {
           <div className={"fleche flechegauche"} onClick={showPreviousImage}>
             {pictures.length > 1 && <img src={flecheCarrroussel} alt={"flèche carroussel"}/>}
           </div>
-          <img src={pictures[currentImageIndex]} alt="" />
+          <img src={pictures[currentImageIndex]} alt="logement" />
           <div className={"fleche flechedroite"} onClick={showNextImage}>
             {pictures.length > 1 && <img src={flecheCarrroussel} alt={"flèche carroussel"}/>}
           </div>
@@ -65,7 +65,7 @@ function FicheLogement() {
             ))}
           </div>
         </div>
-        <div>
+        <div className={"profileStars"}>
           <div className={"profile"}>
             <div className="name">
               <p>{logement.host.name.split(' ')[0]}</p>
