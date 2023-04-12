@@ -5,9 +5,10 @@ import "../../style/home.css"
 import data from '../../data/logements.json';
 
 function Home() {
-  const cards = data.map((item) => {
+  const cards = data.map((item,index) => {
     return (
       <Card
+        key={index}
         id={item.id}
         image={item.cover}
         alt={item.title}

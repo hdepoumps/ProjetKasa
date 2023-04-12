@@ -19,3 +19,14 @@
 .error a{
     text-decoration: auto;
 }
+@media screen and (max-width: 767px){
+    .error h1{
+        font-size: 96px;
+    }
+    .error h2{
+        font-size: 18px;
+    }
+    .error a{
+        font-size: 14px;
+    }
+}

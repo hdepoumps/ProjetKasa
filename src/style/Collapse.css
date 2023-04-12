@@ -17,6 +17,10 @@
     color: #FFFFFF
 }
 
+.collapse_title img{
+    rotate: 180deg;
+}
+
 .collapse_description{
     padding: 27px 23px 18px;
     margin-top: -5px;

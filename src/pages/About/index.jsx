@@ -7,9 +7,10 @@ import '../../style/About.css';
 import img_about from '../../img/banner_about.png';
 import collapsedata from "../../data/collapseAbout.json";
 function About(){
-  const collapsabout = collapsedata.map((item) => {
+  const collapsabout = collapsedata.map((item ,index) => {
     return (
       <Collapse
+        key={index}
         id={item.id}
         title={item.title}
         description={item.description}
