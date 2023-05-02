@@ -21,7 +21,7 @@ function Collapse(props) {
       </div>
       {isExpanded && (
         <div className={"collapse_description"}>
-          <p>{props.description}</p>
+          <div>{props.description}</div>
         </div>
       )}
     </div>
